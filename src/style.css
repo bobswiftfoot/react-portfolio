@@ -105,6 +105,16 @@ nav
 {
     color: var(--secondary-color);
 }
+
+.petSittingModal
+{
+    background-image: url("./images/pet-sitting.png");
+}
+
+.pokemonModal
+{
+    background-image: url("./images/pokemon-database.PNG");
+}
 /*End Modal*/
 
 @media (min-width: 992px) 
