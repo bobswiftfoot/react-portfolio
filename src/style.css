@@ -1,0 +1,121 @@
+:root
+{
+    --primary-color: aqua;
+    --secondary-color: #024e76;
+    --tertiary-color: lightgrey;
+}
+
+body
+{
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav
+{
+    background-color: var(--secondary-color);
+}
+
+.nav-link, .navbar-brand
+{
+    color: var(--primary-color);
+}
+
+/*Hero*/
+.hero
+{
+    background-image: url("./images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero p
+{
+    background-color: var(--secondary-color);
+}
+/*end Hero*/
+
+/*About*/
+.about-me
+{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+.about-me p
+{
+    text-align: center;
+    padding-top: 5px;
+}
+/*End About*/
+
+/*Skills*/
+.skills
+{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+.skills-me p
+{
+    text-align: left;
+    padding-top: 5px;
+}
+/*End Skills*/
+
+/*Work*/
+.work
+{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.work h3
+{
+    background-color: var(--primary-color);
+}
+
+/*End Work*/
+
+/*Contact*/
+.contact-me
+{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.contact-me a
+{
+    color: var(--secondary-color);
+}
+
+.contact-me ul
+{
+    background: var(--tertiary-color);
+}
+
+.contact-me ul li:hover
+{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+/*End Contact*/
+
+/*Modal*/
+.modal-content
+{
+    color: var(--secondary-color);
+}
+/*End Modal*/
+
+@media (min-width: 992px) 
+{
+    .border-lg-end 
+    {
+        border-right: 1px solid #0d6efd !important;
+    }
+
+    .border-lg-bottom-0 
+    {
+        border-bottom: 0 !important;
+    }
+}
