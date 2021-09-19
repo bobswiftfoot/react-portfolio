@@ -6,6 +6,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 
 function App()
 {
@@ -21,8 +22,8 @@ function App()
         return(<Portfolio></Portfolio>);
       case "Contact":
         return(<ContactForm></ContactForm>);
-      // case "Resume":
-      //   return(<Resume></Resume>);
+      case "Resume":
+        return(<Resume></Resume>);
       default:
         return(<About></About>);
     }
