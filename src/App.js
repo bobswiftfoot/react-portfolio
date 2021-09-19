@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import Header from './components/Header';
@@ -11,6 +11,11 @@ import Resume from './components/Resume';
 function App()
 {
   const [currentPage, handlePageChange] = useState('About');
+
+  useEffect(() =>
+  {
+      document.title = currentPage;
+  }, [currentPage]);
 
   function renderPage()
   {
