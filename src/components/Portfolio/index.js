@@ -64,7 +64,7 @@ function Portfolio()
     }
 
     return (
-        <section id="work" className="work row p-3">
+        <section key="Portfolio" className="work row p-3">
             <h2 className="col-12 col-md-2 text-center border-bottom border-primary border-lg-end border-lg-bottom-0">Work</h2>
             <div className="project-wrapper col">
                 <div className="row gx-0">

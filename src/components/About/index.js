@@ -4,7 +4,7 @@ import profilePic from '../../images/profile-picture.png';
 function About()
 {
     return (
-        <div>
+        <div key="About">
             <section className="hero row justify-content-center">
                 <img className="col col-12 col-md-6 col-lg-2 img-fluid" src={profilePic} />
                 <div className="row justify-content-center">

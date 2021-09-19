@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Header()
+function Header(props)
 {
+    const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
     return (
-        <section>
+        <section key="Header">
             <nav className="navbar navbar-expand-lg sticky-top">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="./index.html">Nathan Pfau</a>
@@ -12,10 +13,18 @@ function Header()
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <a className="nav-link" aria-current="page" href="#about-me">About Me</a>
-                            <a className="nav-link" href="#portfolio">Portfolio</a>
-                            <a className="nav-link" href="#contact-me">Contact Me</a>
-                            <a className="nav-link" href="./resume.html">Resume</a>
+                            {tabs.map(tab => (
+                                    <a
+                                        key={tab}
+                                        href={'#' + tab.toLowerCase()}
+                                        onClick={() => props.handlePageChange(tab)}
+                                        className={
+                                            props.currentPage === tab ? 'nav-link active' : 'nav-link'
+                                        }
+                                    >
+                                        {tab}
+                                    </a>
+                            ))}
                         </div>
                     </div>
                 </div>
