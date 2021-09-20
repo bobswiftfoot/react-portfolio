@@ -11,14 +11,19 @@ body
     font-family: Helvetica, Arial, sans-serif;
 }
 
-nav
+.nav
 {
     background-color: var(--secondary-color);
 }
 
-.nav-link, .navbar-brand
+.nav-link, .bs-nav-brand
 {
     color: var(--primary-color);
+}
+
+.nav-link.active
+{
+    color: black;
 }
 
 /*Hero*/
