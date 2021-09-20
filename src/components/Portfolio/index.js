@@ -64,7 +64,7 @@ function Portfolio()
             <div className="project-wrapper col">
                 <div className="row gx-0">
                     {projects.map((value, index) => (
-                        <Project value={value}/>
+                        <Project  key={value.name} value={value}/>
                     ))}
                 </div>
             </div>

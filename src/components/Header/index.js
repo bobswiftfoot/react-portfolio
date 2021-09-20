@@ -12,7 +12,7 @@ function Header(props)
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                     {tabs.map(tab => (
-                        <Nav.Link href={'#' + tab.toLowerCase()} onClick={() => props.handlePageChange(tab)} 
+                        <Nav.Link key={tab} href={'#' + tab.toLowerCase()} onClick={() => props.handlePageChange(tab)} 
                             active={ props.currentPage === tab} >{tab}</Nav.Link>
                     ))}
                     </Nav>
